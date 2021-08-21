@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Css/main.css">
+  <link rel="stylesheet" href="./Source/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Source/Font-Vazir/Vazir.woff">
+  <link rel="stylesheet" href="./Source/fontawesome-free-5.15.2-web/css/all.min.css">
+  <title>To Do List Real</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="controlers d-flex flex-column align-items-center">
+      <div class="nameProject mt-5">
+        <h2>دفترچه یادداشت</h2>
+      </div>
+
+      <div class="line mt-2"></div>
+
+      <div class="input-container mt-5 w-100 d-flex justify-content-center">
+        <input id="mainInput" type="text" class="main-input form-control" placeholder="چه کاری رو میخای انجام بدی ؟">
+      </div>
+
+      <div class="input-btn-container d-flex justify-content-between mt-2">
+        <div class="btn-container d-flex justify-content-between">
+          <button id="btnAdd" class="btn btn-outline-primary ml-2">اضافه</button>
+          <button id="btn-clear" class="btn btn-outline-danger ">پاک کردن</button>
+        </div>
+        <div class="color-container d-flex justify-content-end">
+          <div style="background-color: gold;"  class="color-circle border"></div>
+          <div style="background-color: skyblue;"  class="color-circle border"></div>
+          <div  style="background-color: greenyellow;" class="color-circle border"></div>
+          <div style="background-color: gray;"  class="color-circle border"></div>
+          <div style="background-color: salmon;"  class="color-circle border"></div>
+          <div  style="background-color: white ;" class="color-circle border"></div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="container-fluid bg-light bottom-container">
+    <div class="container">
+      <section class="commands mt-5">
+        <div id="card-adder" class="row">
+
+          <div class="col-12 col-sm-6 col-lg-4 command-container">
+            <div" class="card-command border d-flex justify-content-center align-items-center p-2 mt-4">
+              <button class="close X align-self-start" data-dismiss="card-command" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <p class="text-center w-100"> خرید </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+<script src="./script.js"></script>
+</body>
+
+</html>
